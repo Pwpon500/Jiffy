@@ -1,0 +1,23 @@
+chef:
+    enabled: true
+    server: https://chef-srv.srv.walthome.dynu.net/organizations/jiffy
+    user_name: jiffy
+    user_key: /opt/terraform/chef/jiffy.pem
+    ssl_verify: false
+    recreate_client: true
+    run_list:
+        - install::default
+
+image:
+    location: /data/drive1/debian9.qcow2
+    user: root
+    password: debbase
+    id: debian9-base
+
+memory: 1024
+vcpu: 1
+pool: drive1
+
+network:
+    mode: nat
+    #bridge: vmbr100

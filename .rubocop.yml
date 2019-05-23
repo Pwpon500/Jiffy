@@ -1,0 +1,37 @@
+Metrics/LineLength:
+    Enabled: false
+
+Layout/IndentationWidth:
+    Enabled: false
+
+Style/NumericLiterals:
+    Enabled: false
+
+Lint/UnusedBlockArgument:
+    Enabled: false
+
+Layout/CommentIndentation:
+    Enabled: false
+
+Layout/FirstParameterIndentation:
+    Enabled: false
+
+Layout/IndentHash:
+    Enabled: false
+
+Metrics/MethodLength:
+    Max: 30
+
+Metrics/ClassLength:
+    Enabled: false
+
+Metrics/AbcSize:
+    Max: 50
+
+Metrics/CyclomaticComplexity:
+    Max: 10
+
+AllCops:
+    Exclude:
+        - lib/hash.rb
+        - spec/spec_helper.rb

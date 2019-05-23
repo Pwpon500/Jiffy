@@ -1,0 +1,18 @@
+global_conf: /etc/jiffy/jiffy.yml
+uri: qemu:///system
+flavor: generic
+
+memory: 1024
+vcpu: 1
+
+network:
+    mode: nat
+    addresses: 192.168.0.0/24
+    id: default
+
+interfaces:
+    eth0:
+        proto: dhcp
+
+chef:
+    enabled: false

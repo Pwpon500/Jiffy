@@ -1,0 +1,14 @@
+flavor: dmvpn-client
+
+dmvpn:
+  is_cisco: false
+  map: 100.127.1.1/24
+  hub_ip: 172.30.100.112
+  routes:
+    - - 10.0.0.0/24
+      - 100.127.1.1
+  tunnel:
+    addr: 100.127.1.2
+    netmask: 255.255.255.0
+  gre_key: 1234
+  data_bag_secret: /path/to/secret

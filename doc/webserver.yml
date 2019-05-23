@@ -1,0 +1,8 @@
+flavor: webserver
+
+webserver:
+  repo: https://gitlab.jiffy.com/website.git
+  vip: 172.30.100.120
+  master: true
+  server_name: jiffy.com
+  auth_pass: testpass

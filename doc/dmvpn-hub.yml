@@ -1,0 +1,11 @@
+flavor: dmvpn-hub
+
+dmvpn:
+  routes:
+    - - 192.168.168.0/24
+      - 100.127.1.2
+  tunnel:
+    addr: 100.127.1.1
+    netmask: 255.255.255.0
+  gre_key: 1234
+  data_bag_secret: /path/to/secret

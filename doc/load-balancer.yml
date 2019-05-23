@@ -1,0 +1,11 @@
+flavor: load-balancer
+
+load-balancer:
+  upstream_bag: srv_upstreams
+  upstream_item: test_upstream_item
+
+webserver:
+  vip: 172.30.100.120
+  master: true
+  server_name: jiffy.com
+  auth_pass: testpass

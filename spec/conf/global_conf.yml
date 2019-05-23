@@ -1,0 +1,11 @@
+image:
+    location: /data/drive1/debian9.qcow2
+    user: root
+    password: debbase
+    id: debian9-base
+
+memory: 1024
+vcpu: 1
+
+network:
+    mode: nat

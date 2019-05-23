@@ -1,0 +1,8 @@
+name: jiffy-test
+flavor: generic
+pass_hash: $1$GlI5CHXg$VtEtQUo/CJto0Q5MbIXaB1
+global_conf: spec/conf/global_conf.yml
+
+interfaces:
+    eth0:
+        proto: dhcp

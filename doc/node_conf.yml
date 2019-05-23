@@ -1,0 +1,15 @@
+name: jiffy-test
+flavor: generic
+pass_hash: $1$GlI5CHXg$VtEtQUo/CJto0Q5MbIXaB1
+global_conf: doc/global_conf.yml
+
+interfaces:
+    eth0:
+        proto: static
+        addr: 172.30.100.100
+        netmask: 255.255.255.0
+        gateway: 172.30.100.1
+
+chef:
+    run_list:
+        - install::default
